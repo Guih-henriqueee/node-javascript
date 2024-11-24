@@ -51,15 +51,15 @@ server.delete('/Items/:id', async (request, response) => {
     return response.status(204).send();
 });
 
-// Configuração de Porta e Host
-const PORT = process.env.PORT || 3000; // Utiliza a variável PORT ou 3000 por padrão
-const HOST = '0.0.0.0'; // O servidor precisa estar escutando em 0.0.0.0 no Render
 
-// Iniciando o servidor
-server.listen(PORT, HOST, (err, address) => {
-    if (err) {
-        console.error(err);
-        process.exit(1);
-    }
-    console.log(`Server is running at ${address}`);
-});
+server.listen({
+	host: '0.0.0.0',
+	port: process.env.PORT || 3000
+  }, (err, address) => {
+	if (err) {
+	  console.error(err);
+	  process.exit(1);
+	}
+	console.log(`Server listening at ${address}`);
+  });
+  
