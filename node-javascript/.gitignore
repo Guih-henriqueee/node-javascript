@@ -1,5 +1,4 @@
-package-lock.json
 yarn.lock
-node-modules
+node_modules
 .env
 routes
