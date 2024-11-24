@@ -71,5 +71,5 @@ server.delete('/Items/:id', async (request, response) => {
 
 server.listen({
 	host: '0.0.0.0',
-	port: process.env.PORT ?? 3000,
+	port: process.env.PORT || 4000,
 })
