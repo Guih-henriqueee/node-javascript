@@ -7,15 +7,15 @@
 	"main": "server.js",
 	"type": "module",
 	"scripts": {
-	  "start": "node server.js",          
-	  "dev": "node --watch --no-warnings server.js",
-	  "test": "REGRESSION_TESTING=true npm start"  
+		"start": "node server.js",
+		"dev": "node --watch --no-warnings server.js",
+		"test": "REGRESSION_TESTING=true npm start"
 	},
 	"dependencies": {
-	  "dotenv": "^16.4.5",   
-	  "express": "^4.16.1",  
-	  "fastify": "^5.1.0",   
-	  "postgres": "^3.4.5"    
+		"dotenv": "^16.4.5",
+		"express": "^4.16.1",
+		"fastify": "^5.1.0",
+		"package.json": "^2.0.1",
+		"postgres": "^3.4.5"
 	}
-  }
-  
+}
